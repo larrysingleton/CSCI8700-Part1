@@ -17,7 +17,9 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
-                label.text = detail.name
+                if (detail.name == "Human Computer Interaction") {
+                    label.text = "No Recorded Attendance Yet"
+                }
             }
         }
     }
