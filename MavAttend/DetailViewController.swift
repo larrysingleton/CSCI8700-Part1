@@ -8,11 +8,13 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController,UITableViewDataSource {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-
+    
+    var fakeDays = ["Mon, Aug 21", "Wed, Aug 23", "Mon, Sep 1", "Wed, Sep 3"]
+    var fakeStatuses = ["Present", "Tardy", "Present", "Absent"]
 
     func configureView() {
         // Update the user interface for the detail item.
@@ -24,9 +26,26 @@ class DetailViewController: UIViewController {
                 } else {
                     label.text = ""
                     tableView.isHidden = false
+                    tableView.dataSource = self
                 }
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = fakeDays[indexPath.row]
+        
+        let label = UILabel(frame: CGRect(x:20, y:14, width:200, height:50))
+        label.font = label.font.withSize(12)
+        label.text = fakeStatuses[indexPath.row]
+        cell.addSubview(label)
+        
+        return cell
     }
 
     override func viewDidLoad() {
