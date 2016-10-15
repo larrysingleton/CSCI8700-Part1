@@ -27,9 +27,9 @@ class JustificationViewController: UIViewController {
         self.view.addSubview(justification)
         
         let button = UIButton(type: UIButtonType.roundedRect)
-        button.frame = CGRect(x: 5, y: self.view.bounds.height - 30, width: self.view.bounds.width - 10, height: 25)
+        button.frame = CGRect(x: 5, y: 5, width: self.view.bounds.width - 10, height: 25)
         button.titleLabel!.text = "Submit"
-        self.view.addSubview(button)
+        justification.inputView?.addSubview(button)
     }
     
 }

@@ -8,11 +8,13 @@
 
 import UIKit
 import CoreData
+import LocalAuthentication
 
 class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
+    let authenticationContext = LAContext()
 
 
     override func viewDidLoad() {
@@ -29,6 +31,28 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+    }
+    
+    @IBAction func present(_ sender: UIButton) {
+        // 3. Check the fingerprint
+        authenticationContext.evaluatePolicy(
+            .deviceOwnerAuthenticationWithBiometrics,
+            localizedReason: "Prove it's you attending class today!",
+            reply: { [unowned self] (success, error) -> Void in
+                
+                if( success ) {
+                    let alertController = UIAlertController(title:"Success!",
+                                                            message: "You're accounted for.",
+                                                            preferredStyle: .alert)
+                    alertController.show(self, sender: nil)
+                } else {
+                    let alertController = UIAlertController(title:"Failed!",
+                                                            message: "Could not authenticate.",
+                                                            preferredStyle: .alert)
+                    alertController.show(self, sender: nil)
+                }
+                
+            })
     }
 
     override func viewWillAppear(_ animated: Bool) {
