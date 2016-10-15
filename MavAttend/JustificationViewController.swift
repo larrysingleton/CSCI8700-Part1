@@ -17,7 +17,12 @@ class JustificationViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = date
         
-        let justification = UITextField(frame: CGRect(x: 5, y: 5, width: self.view.bounds.width - 10, height: self.view.bounds.height - 10))
+        let label = UILabel(frame: CGRect(x: 5, y: 80, width: self.view.bounds.width - 10, height: 20))
+        label.text = "Reason for being tardy/absent:"
+        self.view.addSubview(label)
+        
+        let justification = UITextField(frame: CGRect(x: 5, y: 105, width: self.view.bounds.width - 10, height: self.view.bounds.height - 110))
+        justification.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0)
         self.view.addSubview(justification)
     }
     
