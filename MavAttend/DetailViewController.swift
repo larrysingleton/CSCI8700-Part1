@@ -26,6 +26,7 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
                 } else {
                     label.text = ""
                     tableView.isHidden = false
+                    tableView.delegate = self
                     tableView.dataSource = self
                 }
             }
@@ -37,12 +38,14 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = AttendanceViewCell()
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         cell.textLabel?.text = fakeDays[indexPath.row]
         
         let label = UILabel(frame: CGRect(x:20, y:14, width:200, height:50))
         label.font = label.font.withSize(12)
         label.text = fakeStatuses[indexPath.row]
+        cell.status = label
         cell.addSubview(label)
         
         if (fakeStatuses[indexPath.row] != "Present") {
@@ -50,6 +53,15 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! AttendanceViewCell
+        if (cell.status.text != "Present") {
+            let justificationViewController = JustificationViewController()
+            justificationViewController.date = (tableView.cellForRow(at: indexPath)?.textLabel?.text)!
+            self.navigationController?.pushViewController(justificationViewController, animated: true)
+        }
     }
 
     override func viewDidLoad() {
