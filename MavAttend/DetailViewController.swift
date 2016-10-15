@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController,UITableViewDataSource {
+class DetailViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -44,6 +44,10 @@ class DetailViewController: UIViewController,UITableViewDataSource {
         label.font = label.font.withSize(12)
         label.text = fakeStatuses[indexPath.row]
         cell.addSubview(label)
+        
+        if (fakeStatuses[indexPath.row] != "Present") {
+            cell.accessoryType = UITableViewCellAccessoryType.detailDisclosureButton
+        }
         
         return cell
     }
