@@ -41,15 +41,15 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             reply: { [unowned self] (success, error) -> Void in
                 
                 if( success ) {
-                    let alertController = UIAlertController(title:"Success!",
-                                                            message: "You're accounted for.",
-                                                            preferredStyle: .alert)
-                    alertController.show(self, sender: nil)
+                    let alert = UIAlertController(title: "Success!", message: "You're accounted for", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action: UIAlertAction!) in}))
+                    
+                    self.present(alert, animated: true, completion: nil)
                 } else {
-                    let alertController = UIAlertController(title:"Failed!",
-                                                            message: "Could not authenticate.",
-                                                            preferredStyle: .alert)
-                    alertController.show(self, sender: nil)
+                    let alert = UIAlertController(title: "Failed!", message: "Could not authenticate", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action: UIAlertAction!) in}))
+                    
+                    self.present(alert, animated: true, completion: nil)
                 }
                 
             })
