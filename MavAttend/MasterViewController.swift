@@ -19,7 +19,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let image = UIImage(named: "logo.png")
-        let logoView = new UIImageView(image: image)
+        let logoView = UIImageView(image: image)
         self.navigationController?.navigationBar.addSubview(logoView)
 
         if let split = self.splitViewController {

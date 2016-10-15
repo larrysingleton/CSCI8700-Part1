@@ -16,7 +16,7 @@
 		BEE85CCC1DB2547F00793CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CCA1DB2547F00793CD8 /* LaunchScreen.storyboard */; };
 		BEE85CD71DB2547F00793CD8 /* MavAttendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CD61DB2547F00793CD8 /* MavAttendTests.swift */; };
 		BEE85CE21DB2547F00793CD8 /* MavAttendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CE11DB2547F00793CD8 /* MavAttendUITests.swift */; };
-		BEE85CF11DB2593600793CD8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CF01DB2593600793CD8 /* logo.png */; };
+		BEE85CF71DB25A8300793CD8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CF61DB25A8300793CD8 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		BEE85CDD1DB2547F00793CD8 /* MavAttendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MavAttendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE85CE11DB2547F00793CD8 /* MavAttendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MavAttendUITests.swift; sourceTree = "<group>"; };
 		BEE85CE31DB2548000793CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEE85CF01DB2593600793CD8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../../../../Downloads/logo.png; sourceTree = "<group>"; };
+		BEE85CF61DB25A8300793CD8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		BEE85CEF1DB2592A00793CD8 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				BEE85CF01DB2593600793CD8 /* logo.png */,
+				BEE85CF61DB25A8300793CD8 /* logo.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE85CF11DB2593600793CD8 /* logo.png in Resources */,
+				BEE85CF71DB25A8300793CD8 /* logo.png in Resources */,
 				BEE85CCC1DB2547F00793CD8 /* LaunchScreen.storyboard in Resources */,
 				BEE85CC91DB2547F00793CD8 /* Assets.xcassets in Resources */,
 				BEE85CC71DB2547F00793CD8 /* Main.storyboard in Resources */,
