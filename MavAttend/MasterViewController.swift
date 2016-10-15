@@ -22,6 +22,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let logoView = UIImageView(image: image)
         self.navigationController?.navigationBar.addSubview(logoView)
 
+        NSFetchedResultsController.deleteCache(withName: fetchedResultsController.cacheName!)
         insertNewObject(name: "Software Spec & Design", meetTimes: "T/TH @ 7PM")
         insertNewObject(name: "Human Computer Interaction", meetTimes: "M/W @ 1:30")
         if let split = self.splitViewController {
@@ -69,6 +70,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
+                controller.navigationItem.title = object.name
             }
         }
     }
