@@ -93,7 +93,7 @@
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yQZ-TZ-sFN">
                             <rect key="frame" x="0.0" y="140" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.12540816752065598" green="1" blue="0.32152350388641526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="31"/>
                             <state key="normal" title="Present!">
                                 <color key="titleColor" red="1" green="0.94555529640000002" blue="0.98987994589999995" alpha="1" colorSpace="calibratedRGB"/>
