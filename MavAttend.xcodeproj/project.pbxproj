@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEE85CBD1DB2547F00793CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CBC1DB2547F00793CD8 /* AppDelegate.swift */; };
+		BEE85CC01DB2547F00793CD8 /* MavAttend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CBE1DB2547F00793CD8 /* MavAttend.xcdatamodeld */; };
+		BEE85CC21DB2547F00793CD8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CC11DB2547F00793CD8 /* MasterViewController.swift */; };
+		BEE85CC41DB2547F00793CD8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CC31DB2547F00793CD8 /* DetailViewController.swift */; };
+		BEE85CC71DB2547F00793CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CC51DB2547F00793CD8 /* Main.storyboard */; };
+		BEE85CC91DB2547F00793CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CC81DB2547F00793CD8 /* Assets.xcassets */; };
+		BEE85CCC1DB2547F00793CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CCA1DB2547F00793CD8 /* LaunchScreen.storyboard */; };
+		BEE85CD71DB2547F00793CD8 /* MavAttendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CD61DB2547F00793CD8 /* MavAttendTests.swift */; };
+		BEE85CE21DB2547F00793CD8 /* MavAttendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CE11DB2547F00793CD8 /* MavAttendUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEE85CD31DB2547F00793CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE85CB11DB2547E00793CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE85CB81DB2547E00793CD8;
+			remoteInfo = MavAttend;
+		};
+		BEE85CDE1DB2547F00793CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE85CB11DB2547E00793CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE85CB81DB2547E00793CD8;
+			remoteInfo = MavAttend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEE85CB91DB2547F00793CD8 /* MavAttend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MavAttend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE85CBC1DB2547F00793CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEE85CBF1DB2547F00793CD8 /* MavAttend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MavAttend.xcdatamodel; sourceTree = "<group>"; };
+		BEE85CC11DB2547F00793CD8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		BEE85CC31DB2547F00793CD8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BEE85CC61DB2547F00793CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEE85CC81DB2547F00793CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEE85CCB1DB2547F00793CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEE85CCD1DB2547F00793CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE85CD21DB2547F00793CD8 /* MavAttendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MavAttendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE85CD61DB2547F00793CD8 /* MavAttendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MavAttendTests.swift; sourceTree = "<group>"; };
+		BEE85CD81DB2547F00793CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE85CDD1DB2547F00793CD8 /* MavAttendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MavAttendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE85CE11DB2547F00793CD8 /* MavAttendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MavAttendUITests.swift; sourceTree = "<group>"; };
+		BEE85CE31DB2548000793CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEE85CB61DB2547E00793CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE85CCF1DB2547F00793CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE85CDA1DB2547F00793CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEE85CB01DB2547E00793CD8 = {
+			isa = PBXGroup;
+			children = (
+				BEE85CBB1DB2547F00793CD8 /* MavAttend */,
+				BEE85CD51DB2547F00793CD8 /* MavAttendTests */,
+				BEE85CE01DB2547F00793CD8 /* MavAttendUITests */,
+				BEE85CBA1DB2547F00793CD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEE85CBA1DB2547F00793CD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE85CB91DB2547F00793CD8 /* MavAttend.app */,
+				BEE85CD21DB2547F00793CD8 /* MavAttendTests.xctest */,
+				BEE85CDD1DB2547F00793CD8 /* MavAttendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEE85CBB1DB2547F00793CD8 /* MavAttend */ = {
+			isa = PBXGroup;
+			children = (
+				BEE85CBC1DB2547F00793CD8 /* AppDelegate.swift */,
+				BEE85CC11DB2547F00793CD8 /* MasterViewController.swift */,
+				BEE85CC31DB2547F00793CD8 /* DetailViewController.swift */,
+				BEE85CC51DB2547F00793CD8 /* Main.storyboard */,
+				BEE85CC81DB2547F00793CD8 /* Assets.xcassets */,
+				BEE85CCA1DB2547F00793CD8 /* LaunchScreen.storyboard */,
+				BEE85CCD1DB2547F00793CD8 /* Info.plist */,
+				BEE85CBE1DB2547F00793CD8 /* MavAttend.xcdatamodeld */,
+			);
+			path = MavAttend;
+			sourceTree = "<group>";
+		};
+		BEE85CD51DB2547F00793CD8 /* MavAttendTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE85CD61DB2547F00793CD8 /* MavAttendTests.swift */,
+				BEE85CD81DB2547F00793CD8 /* Info.plist */,
+			);
+			path = MavAttendTests;
+			sourceTree = "<group>";
+		};
+		BEE85CE01DB2547F00793CD8 /* MavAttendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE85CE11DB2547F00793CD8 /* MavAttendUITests.swift */,
+				BEE85CE31DB2548000793CD8 /* Info.plist */,
+			);
+			path = MavAttendUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEE85CB81DB2547E00793CD8 /* MavAttend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE85CE61DB2548000793CD8 /* Build configuration list for PBXNativeTarget "MavAttend" */;
+			buildPhases = (
+				BEE85CB51DB2547E00793CD8 /* Sources */,
+				BEE85CB61DB2547E00793CD8 /* Frameworks */,
+				BEE85CB71DB2547E00793CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MavAttend;
+			productName = MavAttend;
+			productReference = BEE85CB91DB2547F00793CD8 /* MavAttend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEE85CD11DB2547F00793CD8 /* MavAttendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE85CE91DB2548000793CD8 /* Build configuration list for PBXNativeTarget "MavAttendTests" */;
+			buildPhases = (
+				BEE85CCE1DB2547F00793CD8 /* Sources */,
+				BEE85CCF1DB2547F00793CD8 /* Frameworks */,
+				BEE85CD01DB2547F00793CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE85CD41DB2547F00793CD8 /* PBXTargetDependency */,
+			);
+			name = MavAttendTests;
+			productName = MavAttendTests;
+			productReference = BEE85CD21DB2547F00793CD8 /* MavAttendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEE85CDC1DB2547F00793CD8 /* MavAttendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE85CEC1DB2548000793CD8 /* Build configuration list for PBXNativeTarget "MavAttendUITests" */;
+			buildPhases = (
+				BEE85CD91DB2547F00793CD8 /* Sources */,
+				BEE85CDA1DB2547F00793CD8 /* Frameworks */,
+				BEE85CDB1DB2547F00793CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE85CDF1DB2547F00793CD8 /* PBXTargetDependency */,
+			);
+			name = MavAttendUITests;
+			productName = MavAttendUITests;
+			productReference = BEE85CDD1DB2547F00793CD8 /* MavAttendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEE85CB11DB2547E00793CD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ian Vaughn Koeppe";
+				TargetAttributes = {
+					BEE85CB81DB2547E00793CD8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					BEE85CD11DB2547F00793CD8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEE85CB81DB2547E00793CD8;
+					};
+					BEE85CDC1DB2547F00793CD8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEE85CB81DB2547E00793CD8;
+					};
+				};
+			};
+			buildConfigurationList = BEE85CB41DB2547E00793CD8 /* Build configuration list for PBXProject "MavAttend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEE85CB01DB2547E00793CD8;
+			productRefGroup = BEE85CBA1DB2547F00793CD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEE85CB81DB2547E00793CD8 /* MavAttend */,
+				BEE85CD11DB2547F00793CD8 /* MavAttendTests */,
+				BEE85CDC1DB2547F00793CD8 /* MavAttendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEE85CB71DB2547E00793CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE85CCC1DB2547F00793CD8 /* LaunchScreen.storyboard in Resources */,
+				BEE85CC91DB2547F00793CD8 /* Assets.xcassets in Resources */,
+				BEE85CC71DB2547F00793CD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE85CD01DB2547F00793CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE85CDB1DB2547F00793CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE85CB51DB2547E00793CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE85CC01DB2547F00793CD8 /* MavAttend.xcdatamodeld in Sources */,
+				BEE85CBD1DB2547F00793CD8 /* AppDelegate.swift in Sources */,
+				BEE85CC21DB2547F00793CD8 /* MasterViewController.swift in Sources */,
+				BEE85CC41DB2547F00793CD8 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE85CCE1DB2547F00793CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE85CD71DB2547F00793CD8 /* MavAttendTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE85CD91DB2547F00793CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE85CE21DB2547F00793CD8 /* MavAttendUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEE85CD41DB2547F00793CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE85CB81DB2547E00793CD8 /* MavAttend */;
+			targetProxy = BEE85CD31DB2547F00793CD8 /* PBXContainerItemProxy */;
+		};
+		BEE85CDF1DB2547F00793CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE85CB81DB2547E00793CD8 /* MavAttend */;
+			targetProxy = BEE85CDE1DB2547F00793CD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEE85CC51DB2547F00793CD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE85CC61DB2547F00793CD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEE85CCA1DB2547F00793CD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE85CCB1DB2547F00793CD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEE85CE41DB2548000793CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEE85CE51DB2548000793CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEE85CE71DB2548000793CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MavAttend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unomaha.MavAttend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BEE85CE81DB2548000793CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MavAttend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unomaha.MavAttend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BEE85CEA1DB2548000793CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MavAttendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unomaha.MavAttendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MavAttend.app/MavAttend";
+			};
+			name = Debug;
+		};
+		BEE85CEB1DB2548000793CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MavAttendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unomaha.MavAttendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MavAttend.app/MavAttend";
+			};
+			name = Release;
+		};
+		BEE85CED1DB2548000793CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MavAttendUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unomaha.MavAttendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MavAttend;
+			};
+			name = Debug;
+		};
+		BEE85CEE1DB2548000793CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MavAttendUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unomaha.MavAttendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MavAttend;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEE85CB41DB2547E00793CD8 /* Build configuration list for PBXProject "MavAttend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE85CE41DB2548000793CD8 /* Debug */,
+				BEE85CE51DB2548000793CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE85CE61DB2548000793CD8 /* Build configuration list for PBXNativeTarget "MavAttend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE85CE71DB2548000793CD8 /* Debug */,
+				BEE85CE81DB2548000793CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEE85CE91DB2548000793CD8 /* Build configuration list for PBXNativeTarget "MavAttendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE85CEA1DB2548000793CD8 /* Debug */,
+				BEE85CEB1DB2548000793CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEE85CEC1DB2548000793CD8 /* Build configuration list for PBXNativeTarget "MavAttendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE85CED1DB2548000793CD8 /* Debug */,
+				BEE85CEE1DB2548000793CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEE85CBE1DB2547F00793CD8 /* MavAttend.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEE85CBF1DB2547F00793CD8 /* MavAttend.xcdatamodel */,
+			);
+			currentVersion = BEE85CBF1DB2547F00793CD8 /* MavAttend.xcdatamodel */;
+			path = MavAttend.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEE85CB11DB2547E00793CD8 /* Project object */;
+}
