@@ -18,6 +18,7 @@
 		BEE85CE21DB2547F00793CD8 /* MavAttendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CE11DB2547F00793CD8 /* MavAttendUITests.swift */; };
 		BEE85CF71DB25A8300793CD8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE85CF61DB25A8300793CD8 /* logo.png */; };
 		BEE85CF91DB2650500793CD8 /* BetterManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CF81DB2650400793CD8 /* BetterManagedObjectContext.swift */; };
+		BEE85CFB1DB26AE900793CD8 /* JustificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE85CFA1DB26AE900793CD8 /* JustificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BEE85CE31DB2548000793CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE85CF61DB25A8300793CD8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BEE85CF81DB2650400793CD8 /* BetterManagedObjectContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterManagedObjectContext.swift; sourceTree = "<group>"; };
+		BEE85CFA1DB26AE900793CD8 /* JustificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				BEE85CBC1DB2547F00793CD8 /* AppDelegate.swift */,
 				BEE85CC11DB2547F00793CD8 /* MasterViewController.swift */,
 				BEE85CC31DB2547F00793CD8 /* DetailViewController.swift */,
+				BEE85CFA1DB26AE900793CD8 /* JustificationViewController.swift */,
 				BEE85CF81DB2650400793CD8 /* BetterManagedObjectContext.swift */,
 				BEE85CC51DB2547F00793CD8 /* Main.storyboard */,
 				BEE85CC81DB2547F00793CD8 /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 				BEE85CF91DB2650500793CD8 /* BetterManagedObjectContext.swift in Sources */,
 				BEE85CC21DB2547F00793CD8 /* MasterViewController.swift in Sources */,
 				BEE85CC41DB2547F00793CD8 /* DetailViewController.swift in Sources */,
+				BEE85CFB1DB26AE900793CD8 /* JustificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
