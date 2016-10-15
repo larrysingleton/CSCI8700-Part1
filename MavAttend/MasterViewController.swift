@@ -21,8 +21,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let image = UIImage(named: "logo.png")
         let logoView = UIImageView(image: image)
         self.navigationController?.navigationBar.addSubview(logoView)
-
-        NSFetchedResultsController.deleteCache(withName: fetchedResultsController.cacheName!)
+        
+        managedObjectContext?.deleteAllData()
         insertNewObject(name: "Software Spec & Design", meetTimes: "T/TH @ 7PM")
         insertNewObject(name: "Human Computer Interaction", meetTimes: "M/W @ 1:30")
         if let split = self.splitViewController {
@@ -117,7 +117,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
-        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath: nil, cacheName: "Master")
+        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath: nil, cacheName: nil)
         aFetchedResultsController.delegate = self
         _fetchedResultsController = aFetchedResultsController
         

@@ -8,6 +8,6 @@
         <userInfo/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="75"/>
+        <element name="Event" positionX="261" positionY="189" width="128" height="73"/>
     </elements>
 </model>
