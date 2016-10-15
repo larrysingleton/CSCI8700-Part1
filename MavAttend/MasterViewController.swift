@@ -22,6 +22,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         let logoView = UIImageView(image: image)
         self.navigationController?.navigationBar.addSubview(logoView)
 
+        insertNewObject(name: "Software Spec & Design", meetTimes: "T/TH @ 7PM")
+        insertNewObject(name: "Human Computer Interaction", meetTimes: "M/W @ 1:30")
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -38,12 +40,13 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         // Dispose of any resources that can be recreated.
     }
 
-    func insertNewObject(_ sender: Any) {
+    func insertNewObject(name: String, meetTimes: String) {
         let context = self.fetchedResultsController.managedObjectContext
         let newEvent = Event(context: context)
              
         // If appropriate, configure the new managed object.
-        newEvent.timestamp = NSDate()
+        newEvent.name = name
+        newEvent.meetTimes = meetTimes
 
         // Save the context.
         do {
@@ -110,7 +113,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     func configureCell(_ cell: UITableViewCell, withEvent event: Event) {
-        cell.textLabel!.text = event.timestamp!.description
+        cell.textLabel!.text = event.name
+        cell.detailTextLabel!.text = event.meetTimes
     }
 
     // MARK: - Fetched results controller
