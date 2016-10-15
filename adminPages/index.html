@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<meta name="generator"
+	content="WYSIWYG Web Builder 11 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="ClassAttendance.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/wwb11.min.js"></script>
+</head>
+<body onclick="ShowObject('Login1', 1);return false;">
+	<div id="container">
+		<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img
+			src="images/builtwithwwb11.png" alt="WYSIWYG Web Builder"
+			style="position: absolute; left: 441px; top: 967px; border-width: 0; z-index: 250"></a>
+		<div id="wb_Image1"
+			style="position: absolute; left: 153px; top: 72px; width: 62px; height: 60px; z-index: 7;">
+			<img src="images/logo-subsite-o-2.png" id="Image1" alt="">
+		</div>
+		<div id="wb_Text1"
+			style="position: absolute; left: 245px; top: 82px; width: 481px; height: 40px; text-align: center; z-index: 8;">
+			<span style="color: #FFFFFF; font-family: Arial; font-size: 35px;">University
+				of Nebraska Omaha</span>
+		</div>
+		<div id="wb_Text2"
+			style="position: absolute; left: 230px; top: 148px; width: 461px; height: 33px; text-align: center; z-index: 9;">
+			<span
+				style="color: #FFFFFF; font-family: 'Comic Sans MS'; font-size: 24px;">Class
+				Attendance Application</span>
+		</div>
+		<div id="wb_loginform"
+			style="position: absolute; left: 304px; top: 260px; width: 310px; height: 251px; z-index: 10;">
+			<form name="loginform" method="post"
+				action="<?php echo basename(__FILE__); ?>" accept-charset="UTF-8"
+				id="loginform">
+				<input type="hidden" name="form_name" value="loginform"> <input
+					type="text" id="username"
+					style="position: absolute; left: 71px; top: 59px; width: 159px; height: 18px; line-height: 18px; z-index: 0;"
+					name="username" value="" maxlength="6"> <input
+					type="password" id="password"
+					style="position: absolute; left: 71px; top: 123px; width: 159px; height: 18px; line-height: 18px; z-index: 1;"
+					name="password" value="" maxlength="6"> <input
+					type="submit" id="login"
+					onclick="window.location.href='./welcome.html';return false;"
+					name="login" value="Log In"
+					style="position: absolute; left: 124px; top: 171px; width: 63px; height: 24px; z-index: 2;">
+				<div id="wb_Text3"
+					style="position: absolute; left: 71px; top: 39px; width: 56px; height: 22px; z-index: 3; text-align: left;">
+					<span style="color: #000000; font-family: Arial; font-size: 19px;">NUID</span>
+				</div>
+				<div id="wb_Text4"
+					style="position: absolute; left: 71px; top: 101px; width: 99px; height: 22px; z-index: 4; text-align: left;">
+					<span style="color: #000000; font-family: Arial; font-size: 19px;">Password</span>
+				</div>
+				<div id="wb_Text5"
+					style="position: absolute; left: 187px; top: 227px; width: 117px; height: 16px; text-align: right; z-index: 5;">
+					<span style="color: #000000; font-family: Arial; font-size: 13px;"><a
+						href="./passwordRecovery.html"
+						onclick="window.location.href='./passwordRecovery.html';return false;">Forgot
+							Password</a></span>
+				</div>
+			</form>
+		</div>
+		<img src="images/img0001.png" id="MergedObject1" alt="" title=""
+			style="border-width: 0; position: absolute; left: 308px; top: 262px; width: 311px; height: 26px; z-index: 11">
+	</div>
+</body>
+</html>
