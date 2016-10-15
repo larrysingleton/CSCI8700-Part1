@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
 
 
     func configureView() {
@@ -18,7 +19,11 @@ class DetailViewController: UIViewController {
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
                 if (detail.name == "Human Computer Interaction") {
+                    tableView.isHidden = true
                     label.text = "No Recorded Attendance Yet"
+                } else {
+                    label.text = ""
+                    tableView.isHidden = false
                 }
             }
         }
